@@ -30,7 +30,7 @@ public class PrimerosPasosView extends PaginaBase {
 
         //Primer Contenedor (Solo color)
         VerticalLayout contenedor1 = new VerticalLayout();
-        contenedor1.getStyle().set("background-color", "#57dbff");
+        contenedor1.getStyle().set("background-color", "#f4d000");
         contenedorColorBase.add(contenedor1);
         contenedorColorBase.setWidthFull();
 

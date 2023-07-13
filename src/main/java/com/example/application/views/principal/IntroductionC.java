@@ -28,7 +28,7 @@ public class IntroductionC extends PaginaBase {
 
         //Primer Contenedor (Solo color)
         VerticalLayout contenedor1 = new VerticalLayout();
-        contenedor1.getStyle().set("background-color", "#57dbff");
+        contenedor1.getStyle().set("background-color", "#3384ca");
         contenedorColor.add(contenedor1);
         contenedorColor.setWidthFull();
 
@@ -73,9 +73,9 @@ public class IntroductionC extends PaginaBase {
         VerticalLayout contenedorControl = new VerticalLayout();
 
         Span info6 = new Span("Control de flujo en C");
-        info4.getStyle().set("font-size", "24px");
-        info4.getStyle().set("color", "black");
-        info4.getStyle().set("font-weight", "bold");
+        info6.getStyle().set("font-size", "24px");
+        info6.getStyle().set("color", "black");
+        info6.getStyle().set("font-weight", "bold");
 
         Span info7 = new Span("En la sección de control de flujo en C enseña cómo dirigir y controlar la ejecución del programa. Aquí aprenderás a utilizar estructuras de decisión y bucles para tomar decisiones y repetir acciones según las condiciones requeridas. Esto les permite tener un mayor control sobre el flujo del programa y hacer que se ejecute de manera más eficiente y efectiva.");
 
@@ -87,9 +87,9 @@ public class IntroductionC extends PaginaBase {
         VerticalLayout contenedorFinal = new VerticalLayout();
 
         Span info8 = new Span("Control de flujo en C");
-        info4.getStyle().set("font-size", "24px");
-        info4.getStyle().set("color", "black");
-        info4.getStyle().set("font-weight", "bold");
+        info8.getStyle().set("font-size", "24px");
+        info8.getStyle().set("color", "black");
+        info8.getStyle().set("font-weight", "bold");
 
         Span info9 = new Span("En esta sección pondrás en práctica todos los conocimientos que haz adquirido en las secciones anteriores.");
 

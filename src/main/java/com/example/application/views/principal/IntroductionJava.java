@@ -1,5 +1,6 @@
 package com.example.application.views.principal;
 
+import com.vaadin.flow.component.html.Image;
 import pagina.base.PaginaBase;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.html.Span;
@@ -25,10 +26,9 @@ public class IntroductionJava extends PaginaBase {
         VerticalLayout contenedorTittle = new VerticalLayout();
         VerticalLayout contenedorSecciones = new VerticalLayout();
 
-
         //Primer Contenedor (Solo color)
         VerticalLayout contenedor1 = new VerticalLayout();
-        contenedor1.getStyle().set("background-color", "#57dbff");
+        contenedor1.getStyle().set("background-color", "#e54b4b");
         contenedorColor.add(contenedor1);
         contenedorColor.setWidthFull();
 
@@ -49,13 +49,13 @@ public class IntroductionJava extends PaginaBase {
         info2.getStyle().set("color", "black");
         info2.getStyle().set("font-weight", "bold");
 
-        Span info3 = new Span("En esta sección revisaremos:" +
+        Span info3 = new Span("En esta sección revisaremos: " +
                 "Introducción a Java y su entorno de desarrollo.\n" +
                 "Aprendizaje sobre variables y tipos de datos.\n" +
                 "Utilización de operadores y expresiones para realizar cálculos.");
 
         contenedorIntroduction.add(info2, info3);
-        contenedorIntroduction.getStyle().set("background-color", "#dae1f0");
+        contenedorIntroduction.getStyle().set("background-color", "#ff9a93");
         contenedorIntroduction.setWidth("100%");
 
         //Contenedor Polimorfismo
@@ -66,42 +66,42 @@ public class IntroductionJava extends PaginaBase {
         info4.getStyle().set("color", "black");
         info4.getStyle().set("font-weight", "bold");
 
-        Span info5 = new Span("En esta sección podras:" +
+        Span info5 = new Span("En esta sección podras: " +
                 "Comprender la herencia y cómo se puede utilizar para reutilizar el código.\n" +
                 "Creación de clases y subclases para establecer relaciones entre ellas.\n" +
                 "Exploración de métodos y atributos heredados para aprovechar la herencia.\n" +
-                "Aplicación del polimorfismo para vincular dinámicamente métodos y objetos..");
+                "Aplicación del polimorfismo para vincular dinámicamente métodos y objetos.");
 
         contenedorPolimorfismo.add(info4, info5);
-        contenedorPolimorfismo.getStyle().set("background-color", "#dae1f0");
+        contenedorPolimorfismo.getStyle().set("background-color", "#ffb0aa");
         contenedorPolimorfismo.setWidth("100%");
 
         //Contenedor Control
         VerticalLayout contenedorControl = new VerticalLayout();
 
         Span info6 = new Span("Clases Abstractas");
-        info4.getStyle().set("font-size", "24px");
-        info4.getStyle().set("color", "black");
-        info4.getStyle().set("font-weight", "bold");
+        info6.getStyle().set("font-size", "24px");
+        info6.getStyle().set("color", "black");
+        info6.getStyle().set("font-weight", "bold");
 
-        Span info7 = new Span("En esta seccion veremos la utilización de clases abstractas para definir comportamientos comunes..");
+        Span info7 = new Span("En esta seccion veremos la utilización de clases abstractas para definir comportamientos comunes.");
 
         contenedorControl.add(info6, info7);
-        contenedorControl.getStyle().set("background-color", "#dae1f0");
+        contenedorControl.getStyle().set("background-color", "#ff9a93");
         contenedorControl.setWidth("100%");
 
         //Contenedor Final
         VerticalLayout contenedorFinal = new VerticalLayout();
 
         Span info8 = new Span("Proyecto Final");
-        info4.getStyle().set("font-size", "24px");
-        info4.getStyle().set("color", "black");
-        info4.getStyle().set("font-weight", "bold");
+        info8.getStyle().set("font-size", "24px");
+        info8.getStyle().set("color", "black");
+        info8.getStyle().set("font-weight", "bold");
 
         Span info9 = new Span("En esta sección pondrás en práctica todos los conocimientos que haz adquirido en las secciones anteriores.");
 
         contenedorFinal.add(info8, info9);
-        contenedorFinal.getStyle().set("background-color", "#dae1f0");
+        contenedorFinal.getStyle().set("background-color", "#ffb0aa");
         contenedorFinal.setWidth("100%");
 
         contenedorSecciones.add(contenedorIntroduction, contenedorPolimorfismo, contenedorControl, contenedorFinal);

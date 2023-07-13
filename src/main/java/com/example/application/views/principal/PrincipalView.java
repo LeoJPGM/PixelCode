@@ -3,6 +3,8 @@ package com.example.application.views.principal;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.html.Image;
 import com.vaadin.flow.component.html.Span;
+import com.vaadin.flow.component.icon.Icon;
+import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -56,7 +58,11 @@ public class PrincipalView extends PaginaBase {
         info5.getStyle().set("font-size", "28px");
 
         Span info6 = new Span("¿Listo para empezar a crear y programar? Descubre lo fácil que es empezar a utilizar PixelCode.");
+        Icon empezar_Principal = new Icon("lumo", "angle-right");
         Button empezar = new Button("Empezar aquí", buttonClickEvent -> {getUI().ifPresent(ui -> {ui.navigate("primeros-pasos");});});
+
+        empezar.getStyle().set("background-color", "transparent");
+        empezar.setIcon(empezar_Principal);
 
 
 
