@@ -28,7 +28,7 @@ public class IntroductionC extends PaginaBase {
 
         //Primer Contenedor (Solo color)
         VerticalLayout contenedor1 = new VerticalLayout();
-        contenedor1.getStyle().set("background-color", "#3384ca");
+        contenedor1.getStyle().set("background-color", "#57dbff");
         contenedorColor.add(contenedor1);
         contenedorColor.setWidthFull();
 
@@ -86,7 +86,7 @@ public class IntroductionC extends PaginaBase {
         //Contenedor Final
         VerticalLayout contenedorFinal = new VerticalLayout();
 
-        Span info8 = new Span("Control de flujo en C");
+        Span info8 = new Span("Proyecto Final");
         info8.getStyle().set("font-size", "24px");
         info8.getStyle().set("color", "black");
         info8.getStyle().set("font-weight", "bold");
@@ -97,8 +97,10 @@ public class IntroductionC extends PaginaBase {
         contenedorFinal.getStyle().set("background-color", "#dae1f0");
         contenedorFinal.setWidth("100%");
 
+        Button empezar1 = new Button("Empezar aquí", buttonClickEvent -> {getUI().ifPresent(ui -> {ui.navigate("fundamentos-c");});});
+
         contenedorSecciones.add(contenedorIntroduction,contenedorVariables,contenedorControl,contenedorFinal);
-        contenedorPrincipal.add(contenedorColor,contenedorTittle,contenedorSecciones);
+        contenedorPrincipal.add(contenedorColor,contenedorTittle,contenedorSecciones,empezar1);
         setContent(contenedorPrincipal);
     };
 
