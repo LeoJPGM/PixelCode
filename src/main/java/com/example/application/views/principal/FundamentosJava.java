@@ -42,7 +42,7 @@ public class FundamentosJava extends PaginaBase {
         info3.getStyle().set("font-size", "28px");
 
         Span info4 = new Span("Para empezar a programar en Java, necesitarás configurar tu entorno de desarrollo. Esto implica instalar el Kit de Desarrollo de Java (JDK) en tu máquina y configurar tu editor de código preferido. El JDK contiene las herramientas necesarias para compilar y ejecutar programas Java.");
-        Image imagen2 = new Image("images/Imagen2.gif", "Imagen2");
+        Image imagen2 = new Image("images/", "Imagen2");
         imagen2.setWidth("60%");
 
         Span info5 = new Span("Tipos de variables");
