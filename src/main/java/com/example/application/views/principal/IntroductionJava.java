@@ -1,14 +1,15 @@
 package com.example.application.views.principal;
 
-import com.vaadin.flow.component.html.Image;
-import pagina.base.PaginaBase;
 import com.vaadin.flow.component.button.Button;
+import pagina.base.PaginaBase;
 import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
+
+import java.awt.*;
 
 
 @PageTitle("Lenguaje Java")
@@ -45,6 +46,7 @@ public class IntroductionJava extends PaginaBase {
         VerticalLayout contenedorIntroduction = new VerticalLayout();
 
         Span info2 = new Span("Fundamentos de Java");
+
         info2.getStyle().set("font-size", "24px");
         info2.getStyle().set("color", "black");
         info2.getStyle().set("font-weight", "bold");
@@ -104,8 +106,12 @@ public class IntroductionJava extends PaginaBase {
         contenedorFinal.getStyle().set("background-color", "#ffb0aa");
         contenedorFinal.setWidth("100%");
 
+        Button empezar = new Button("Siguiente", buttonClickEvent -> {getUI().ifPresent(ui -> {ui.navigate("fundamentos-java");});});
+
+        empezar.getStyle().set("background-color", "transparent");
+
         contenedorSecciones.add(contenedorIntroduction, contenedorPolimorfismo, contenedorControl, contenedorFinal);
-        contenedorPrincipal.add(contenedorColor, contenedorTittle, contenedorSecciones);
+        contenedorPrincipal.add(contenedorColor, contenedorTittle, contenedorSecciones, empezar);
         setContent(contenedorPrincipal);
     }
 }
